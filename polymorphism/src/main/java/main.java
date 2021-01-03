@@ -22,21 +22,31 @@ public class main {
         thingList.add(myCat);
         thingList.add(myWater);
         printIsLiquid();
+        printIsThing();
     }
 
     public static void printBigCategory() {
+        System.out.println("=====printBigcategory=====");
         animalList.forEach(animal -> animal.printBigCategory());
     }
 
     public static void printSmallCategory() {
+        System.out.println("=====printSmallCategory=====");
         animalList.forEach(animal -> animal.printSmallCategory());
     }
 
     public static void askOwnerForFood() {
+        System.out.println("=====askOwnerForFood=====");
         petList.forEach(pet -> pet.askOwnerForFood());
     }
 
     public static void printIsLiquid() {
+        System.out.println("=====printIsLiquid=====");
         thingList.forEach(thing -> System.out.println(thing.isLiquid()));
+    }
+
+    public static void printIsThing() {
+        System.out.println("=====printIsThing=====");
+        thingList.forEach(thing -> System.out.println(thing.isThing()));
     }
 }
