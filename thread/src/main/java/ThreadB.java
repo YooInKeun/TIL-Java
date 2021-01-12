@@ -1,8 +1,8 @@
-public class ThreadEx implements Runnable {
+public class ThreadB implements Runnable {
     private int[] space;
     private String name;
 
-    public ThreadEx(String name) {
+    public ThreadB(String name) {
         this.name = name;
         this.space = new int[100];
 
